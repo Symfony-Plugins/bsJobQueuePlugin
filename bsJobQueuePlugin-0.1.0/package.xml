@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>bsJobQueuePlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>bsJobQueue</summary>
+ <description>This plugin allow to postpone the execution of some execution</description>
+ <lead>
+  <name>Mickael HOAREAU</name>
+  <user>Mickael HOAREAU</user>
+  <email>mickael.hoareau@bysoft.fr</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-08-31</date>
+ <time>06:33:17</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>devel</release>
+  <api>devel</api>
+ </stability>
+ <license uri="http://www.symfony-project.org/license">MIT license</license>
+ <notes>-</notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="53d9466072ea1199c64bbea79af48059" name="config/doctrine/schema.yml" role="data" />
+   <file md5sum="c66cccb9c472332e4263e3bec3ea35eb" name="lib/task/jobQueueStatTask.class.php" role="data" />
+   <file md5sum="1d72f3d99f57d922bcfd690b772833fa" name="lib/task/jobQueuePurgeTask.class.php" role="data" />
+   <file md5sum="653c5fca12d08461d425cf83aecaf2df" name="lib/task/processJobQueueTask.class.php" role="data" />
+   <file md5sum="a79dfe72d66cfab906e327669048152f" name="lib/model/doctrine/PluginbsJobQueueTable.class.php" role="data" />
+   <file md5sum="f3a5b804a61cf3e04804c0745e185309" name="lib/model/doctrine/PluginbsJobQueue.class.php" role="data" />
+   <file md5sum="d75c3009f48527ed75287833683113cf" name="README" role="data" />
+   <file md5sum="18912ab97d474e774974a4561712331a" name="LICENSE" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.4</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.2.0</min>
+    <max>1.3.0</max>
+    <exclude>1.3.0</exclude>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog />
+</package>

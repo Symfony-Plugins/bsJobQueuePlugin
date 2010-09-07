@@ -1,0 +1,29 @@
+bsJobQueue:
+  tableName: job_queue
+  actAs:
+    Timestampable: ~  
+  columns:
+    id:
+      type: integer(11)
+      primary: true
+      autoincrement: true
+    job_params:
+      type: string(255)
+      default: ''
+    table_class_name:
+      type: string(255)
+      default: ''
+    function_name:
+      type: string(255)
+      default: ''
+    status:
+      type: enum
+      values: [waiting, in_progress, done, has_error]
+      notnull: true
+    duration:
+      type: float
+    note:
+      type: blob
+    executed_at:
+      type: date
+      default: ''          
